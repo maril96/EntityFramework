@@ -23,12 +23,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\Ticketing.Core\Ticketing.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ModelTicketing\" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CodeFirst.ModelTicketing
+namespace Ticketing.Core.Model
 {
     public class Note
     {

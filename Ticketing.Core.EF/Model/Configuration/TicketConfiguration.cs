@@ -3,8 +3,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Ticketing.Core.Model;
 
-namespace CodeFirst.ModelTicketing.Configuration
+namespace Ticketing.Core.EF.Model.Configuration
 {
     public class TicketConfiguration : IEntityTypeConfiguration<Ticket>
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CodeFirst.Migrations
+namespace Ticketing.Core.EF.Migrations
 {
     public partial class TicketRequestorAdded : Migration
     {

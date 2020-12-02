@@ -1,6 +1,7 @@
 ﻿using CodeFirst.ModelTicketing;
 using System;
 using System.Collections.Generic;
+using Ticketing.Core.Model;
 
 namespace CodeFirst
 {

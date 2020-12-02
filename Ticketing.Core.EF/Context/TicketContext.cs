@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
+using Ticketing.Core.EF.Model.Configuration;
 using Ticketing.Core.Model;
 //Quando creo una cartella cambia il namespace: bisogna aggiungerlo!
 
-namespace CodeFirst.Context
+namespace Ticketing.Core.EF.Context
 {
     public sealed class TicketContext : DbContext
     {

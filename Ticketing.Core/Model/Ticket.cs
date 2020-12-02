@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
 
-namespace CodeFirst.ModelTicketing
+namespace Ticketing.Core.Model
 {
     public class Ticket
     {
