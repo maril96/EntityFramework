@@ -26,6 +26,7 @@ namespace CodeFirst.Context
 
             optionBuilder.UseSqlServer(connString);
 
+            optionBuilder.UseLazyLoadingProxies();
         }
 
         //Lavoriamo in FluentAPI per aggiungere qualche vincolo

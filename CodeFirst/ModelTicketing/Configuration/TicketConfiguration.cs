@@ -43,10 +43,14 @@ namespace CodeFirst.ModelTicketing.Configuration
                 .HasForeignKey(n => n.TicketId) //con questa foreignKey
                 .HasConstraintName("FK_Ticket_Notes") //Diamo un nome al constraint: se non lo specifichiamo gli dà lui un nome
                 .OnDelete(DeleteBehavior.Cascade); //Se si cancella un elemento si cancellano anche le referenze
-           //(La cancellazione si propaga a cascata, seguendo le foreign keys: se cancello un Ticket vengono cancellate le note associate)
+                                                   //(La cancellazione si propaga a cascata, seguendo le foreign keys: se cancello un Ticket vengono cancellate le note associate)
 
             //Per le relazioni N:N basterebbe fare HasMany WithMany, lui poi costruisce da solo la tabella di bridge
-        
+
+            //Per gestire la concorrenza:
+            builder
+                .Property(t => t.RowVersion)
+                .IsRowVersion();
         
         }
     }

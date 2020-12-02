@@ -9,11 +9,11 @@ namespace CodeFirst.ModelTicketing
     {
         //Dovremmo mettere il costruttore che inizializza la lista, altrimenti bisogna poi gestire gli eventuali null
 
-        public Ticket()
-        {
+        //public Ticket()
+        //{
             //Inizializziamo le navigation properties, che potremmo andare ad esplorare...
-            Notes = new List<Note>();
-        }
+           // Notes = new List<Note>();
+        //}
 
         //Le DataAnnotations qui sono le stesse che abbiamo scritto come FluentAPI nel Context.
         //Lui controlla prima le FluentAPI, poi le DataAnnotations e poi cerca di andare di default, se non riesce tira fuori un'Eccezione. 
@@ -36,5 +36,8 @@ namespace CodeFirst.ModelTicketing
         //Navigation property monodirezionale
         public virtual List<Note> Notes { get; set; }
        
+        //Per gestire la concorrenza
+        public Byte[] RowVersion { get; set; }
+
     }
 }

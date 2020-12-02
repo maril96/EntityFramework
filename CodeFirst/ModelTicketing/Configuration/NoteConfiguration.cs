@@ -24,6 +24,12 @@ namespace CodeFirst.ModelTicketing.Configuration
                 .WithMany(t => t.Notes)
                 .HasForeignKey(n => n.TicketId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+
+            //per gestire la concorrenza:
+            builder
+                .Property(n => n.RowVersion)
+                .IsRowVersion();
         }
     }
 }
