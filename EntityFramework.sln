@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.Core", "Ticketing
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.Core.EF", "Ticketing.Core.EF\Ticketing.Core.EF.csproj", "{FC1DF3A1-C8F6-44AB-BCF0-C6BE8D128DCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketing.Core.Mock", "Ticketing.Core.Mock\Ticketing.Core.Mock.csproj", "{6C31E430-9E3D-4F52-9643-DD80574CAF09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.Core.Mock", "Ticketing.Core.Mock\Ticketing.Core.Mock.csproj", "{6C31E430-9E3D-4F52-9643-DD80574CAF09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketing.Client", "Ticketing.Client\Ticketing.Client.csproj", "{B4E32491-3A0A-4E06-A758-1B33B443F497}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ticketing.Client", "Ticketing.Client\Ticketing.Client.csproj", "{B4E32491-3A0A-4E06-A758-1B33B443F497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ticketing.API", "Ticketing.API\Ticketing.API.csproj", "{9834289E-7886-4A38-A370-9182C060BD04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B4E32491-3A0A-4E06-A758-1B33B443F497}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4E32491-3A0A-4E06-A758-1B33B443F497}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4E32491-3A0A-4E06-A758-1B33B443F497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9834289E-7886-4A38-A370-9182C060BD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9834289E-7886-4A38-A370-9182C060BD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9834289E-7886-4A38-A370-9182C060BD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9834289E-7886-4A38-A370-9182C060BD04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
 ﻿using System;
+using Ticketing.Core.BusinessLayer;
 using Ticketing.Core.Model;
 
 namespace Ticketing.Client

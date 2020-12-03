@@ -21,7 +21,7 @@ namespace Ticketing.Core.EF.Context
 
             optionBuilder.UseSqlServer(connString);
 
-            optionBuilder.UseLazyLoadingProxies();
+            //optionBuilder.UseLazyLoadingProxies(); //NON nel Web (Non con le API)
         }
 
         //Lavoriamo in FluentAPI per aggiungere qualche vincolo
